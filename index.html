@@ -151,18 +151,27 @@ function searchKeyPress(e){
 
 
 
-        <div id="search-query">
-
-
-          <img id="search-icon" alt="Search" onclick="submitSearch();" src="https://img.uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png
-">
-          
-
-          <img id="search-icon" alt="Search"  onclick="submitSearch();" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAADAklEQVR4AezZA6xcQRSA4b92g9q2/VRuw9puVLcxake13Zh1G9W2bds2T42ZzNPeO7Pb5H5/zD17PUMgEAgEAoFAIGxFGMRMlrGTi7zjFZfZwTJmMohCRLkajOMYkkRHGUdNolI8B5EUdpB4okpJViOpbDXFiArpGMcHJIzeMY50RFgB9iIe2ksBIiiGR4jHHhFDhHTlI+JDH+lKBMQmceY/YhZNqExBMn+rAJUIMZMnCOY+EItjxRP9OetoTQZMMtCadYixJ5TAoQyYH1cbiCE5CWxADB0jA85MNp7JHUipnsbTbwqO1OWL4RSIIzUSDKfgF+riQBrOIFrPKENqleEZonWGNFjX0vDPNSUcTQ1HsiXWbUO0hhOu4YjWViwri2gdwYvDiFZ5rJqIaMXgRRyiNRGr7iBKa/BqDaJ0G4vKIVqN8Kqxy5OoL6L0mDR4lUZ/o2UA1sxHlBbhh8WI0jys2Y4odcUPXRCl7VhzDVFqgB8aIErXsUZ/fylr5dnyGGv0R38O/JADUfqMNfpLcHb8kF1/Mf/fT6HnWHMdUWqIHxoiSjexZiui1A0/dEWUtmHNPERpsZUH2WJ3rxKPSIdX6XiMKPXGmvKIVgivQohWJSx6YP11+g5WTUK04vAiBtGaBeDyJDqMF0cQrVpYthnRGkq4hiJau7GuhW/LKiHDskpzrEvDKV8WtkobFrZ24UQ9H5YW44xLi7VwZIpxcbcbKdXNuDUyG2cychQxtJ4YkhPPOsTQJXLiUMmwNjhasQUx9obyOBafzBZTiMoUIguZKUhlQszSRtYHaI5z+pnsT6NxKI5HiMee8xlRGoJDhdiNeOg6ZWmNRHKEdIzlXZj7w/PIDYBEdgQoxmokla2nNL9J5EeAeI4iKWwPXfiXRMcIUJPxHEOS6CTDKYVuTGRH0BViEDNZyk4u8gpBeMMuJtKegujcj2DN1/bnmAgAEIBhIJIZGZHOWAEslPsoyCMgIHxPmAgICAjXIQRQSsh+JSH7vYQ1StvZryW8vy9JkiQdHsFQT60Y7OcAAAAASUVORK5CYII=">
-
-          <input type="text" id="search-query-input" placeholder="Paste the URL article" onkeypress="return searchKeyPress(event);" style="box-shadow:none";>
-
-        </div>
+       <div id="search-query">
+      <img
+        id="search-icon"
+        alt="Search"
+        onclick="submitSearch();"
+        src="https://img.uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png"
+      />
+      <img
+        id="search-icon"
+        alt="Search"
+        onclick="submitSearch();"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAADAklEQVR4AezZA6xcQRSA4b92g9q2/VRuw9puVLcxake13Zh1G9W2bds2T42ZzNPeO7Pb5H5/zD17PUMgEAgEAoFAIGxFGMRMlrGTi7zjFZfZwTJmMohCRLkajOMYkkRHGUdNolI8B5EUdpB4okpJViOpbDXFiArpGMcHJIzeMY50RFgB9iIe2ksBIiiGR4jHHhFDhHTlI+JDH+lKBMQmceY/YhZNqExBMn+rAJUIMZMnCOY+EItjxRP9OetoTQZMMtCadYixJ5TAoQyYH1cbiCE5CWxADB0jA85MNp7JHUipnsbTbwqO1OWL4RSIIzUSDKfgF+riQBrOIFrPKENqleEZonWGNFjX0vDPNSUcTQ1HsiXWbUO0hhOu4YjWViwri2gdwYvDiFZ5rJqIaMXgRRyiNRGr7iBKa/BqDaJ0G4vKIVqN8Kqxy5OoL6L0mDR4lUZ/o2UA1sxHlBbhh8WI0jys2Y4odcUPXRCl7VhzDVFqgB8aIErXsUZ/fylr5dnyGGv0R38O/JADUfqMNfpLcHb8kF1/Mf/fT6HnWHMdUWqIHxoiSjexZiui1A0/dEWUtmHNPERpsZUH2WJ3rxKPSIdX6XiMKPXGmvKIVgivQohWJSx6YP11+g5WTUK04vAiBtGaBeDyJDqMF0cQrVpYthnRGkq4hiJau7GuhW/LKiHDskpzrEvDKV8WtkobFrZ24UQ9H5YW44xLi7VwZIpxcbcbKdXNuDUyG2cychQxtJ4YkhPPOsTQJXLiUMmwNjhasQUx9obyOBafzBZTiMoUIguZKUhlQszSRtYHaI5z+pnsT6NxKI5HiMee8xlRGoJDhdiNeOg6ZWmNRHKEdIzlXZj7w/PIDYBEdgQoxmokla2nNL9J5EeAeI4iKWwPXfiXRMcIUJPxHEOS6CTDKYVuTGRH0BViEDNZyk4u8gpBeMMuJtKegujcj2DN1/bnmAgAEIBhIJIZGZHOWAEslPsoyCMgIHxPmAgICAjXIQRQSsh+JSH7vYQ1StvZryW8vy9JkiQdHsFQT60Y7OcAAAAASUVORK5CYII="
+      />
+      <input
+        type="text"
+        id="search-query-input"
+        placeholder="Paste the URL article"
+        onkeypress="return searchKeyPress(event);"
+        style="box-shadow:none"
+      />
+    </div>
 
 
 
