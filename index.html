@@ -84,42 +84,28 @@
       margin-top: 2rem;
     }
 
-    input[type="text"] {
-      width: 100%;
-      max-width: 480px;
-      padding: 0.5rem;
-      font-size: 1rem;
-      color: #000;
-      background-color: #FFF;
-      border: 0;
-      border-radius: 4px;
-      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-      text-align: start;
-    }
-
-    @media all and (max-width: 480px) {
+    @media (min-width: 768px) {
       h1 {
-        font-size: 3rem;
+        font-size: 4rem;
       }
+
       p {
-        font-size: 1.125rem;
-      }
-      #search-query input[type="text"] {
-        max-width: 100%;
+        font-size: 1.5rem;
       }
     }
   </style>
 </head>
+
 <body>
-  <section class="w-full bg-white">
+  <section class="w-full" style="background-color: #36454F;">
     <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
-      <div class="flex w-full mx-auto text-center">
+      <div class="flex w-full mx-auto text-left">
         <div class="relative inline-flex items-center mx-auto align-middle">
           <div class="text-center">
             <h1 class="max-w-5xl text-2xl font-bold leading-none tracking-tighter md:text-5xl lg:text-6xl lg:max-w-7xl">
               PayWall Remover<br class="hidden lg:block">
             </h1>
-            <p class="max-w-xl mx-auto mt-8 text-base leading-relaxed">Paste the link in the following search box and read any article without a paywall</p>
+            <p class="max-w-xl mx-auto mt-8 text-base leading-relaxed">Paste the link in the following search box & read any article without a paywall</p>
           </div>
         </div>
       </div>
