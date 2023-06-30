@@ -64,67 +64,42 @@
       background-color: #36454F;
     }
 
-    #search-icon, #clear-icon {
-      padding: 12px;
-      height: 24px;
-      vertical-align: middle;
-      cursor: pointer;
+    h1 {
+      color: #FFFFFF;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
     }
 
-    #clear-icon {
-      visibility: hidden;
+    p {
+      color: #E5E7EB;
+      font-size: 1.25rem;
+      line-height: 1.7;
     }
 
-    #search-query {
-      width: 50vw;
-      min-width: 480px;
-      max-width: 720px;
-      margin: 0 auto;
-      overflow: hidden;
-      border: 0;
-      border-radius: 4px;
-      color: #212121;
-      background-color: #FFF;
-      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-      font-size: 16px;
-      line-height: 24px;
-    }
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 4rem;
+      }
 
-    #search-query-input {
-      min-width: 104px;
-      width: 66%;
-      height: 24px;
-      font-size: 16px;
-      font-stretch: normal;
-      letter-spacing: normal;
-      line-height: 24px;
-      border: 0;
-      color: #000;
-      background-color: transparent;
-      cursor: text;
-      text-align: start;
-      vertical-align: middle;
-    }
-
-    @media all and (max-width: 480px) {
-      #search-query {
-        min-width: 200px;
-        width: 100%;
+      p {
+        font-size: 1.5rem;
       }
     }
   </style>
 </head>
 
 <body>
-  <section class="w-full bg-white" style="background-color: #36454F;">
+  <section class="w-full" style="background-color: #36454F;">
     <div class="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
       <div class="flex w-full mx-auto text-left">
         <div class="relative inline-flex items-center mx-auto align-middle">
           <div class="text-center">
-            <h1 class="max-w-5xl text-2xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-6xl lg:max-w-7xl">
-              PayWall Remover <br class="hidden lg:block">
+            <h1 class="max-w-5xl text-2xl font-bold leading-none tracking-tighter md:text-5xl lg:text-6xl lg:max-w-7xl">
+              PayWall Remover<br class="hidden lg:block">
             </h1>
-            <p class="max-w-xl mx-auto mt-8 text-base leading-relaxed text-gray-500">Paste the link in the following search box & read any article without a paywall</p>
+            <p class="max-w-xl mx-auto mt-8 text-base leading-relaxed">Paste the link in the following search box & read any article without a paywall</p>
           </div>
         </div>
       </div>
@@ -132,7 +107,7 @@
   </section>
 
   <div id="search-query">
-    <input type="text" id="search-query-input" placeholder="Paste the URL article" onkeypress="return searchKeyPress(event);" style="box-shadow:none" />
+    <input type="text" id="search-query-input" placeholder="Paste the URL article" onkeypress="return searchKeyPress(event);" style="box-shadow:none">
   </div>
 </body>
 </html>
